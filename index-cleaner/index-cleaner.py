@@ -4,9 +4,12 @@ import datetime
 import requests
 from requests.auth import HTTPBasicAuth
 
-MAX = 3
+# number of indices to keep
+MAX = 7
+
 # index name example: myIndex-2020.11.10
 INDEX_POSTFIX = 'myIndex'
+
 USER = os.environ.get('ES_USER')
 PASSWD = os.environ.get('ES_PASSWORD')
 
